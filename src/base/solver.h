@@ -35,6 +35,10 @@ int EulerSolver::setup(void){
 	ds_xi = allocate_2d_array<dtype>(ni-1, nj-1);
 
 	neta_x = allocate_2d_array<dtype>(ni-1, nj);
-
+	neta_y = allocate_2d_array<dtype>(ni-1, nj);
+	
+	nxi_x = allocate_2d_array<dtype>(ni, nj-1);
+	nxi_y = allocate_2d_array<dtype>(ni, nj-1);
+	
 	return 0;
 }
